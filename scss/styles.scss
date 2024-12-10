@@ -1,16 +1,5 @@
-:root{
-    --negro: #191919;
-    --primario: #FDE74C;
-    --secundario: #ff7f11;
-    --rojo: #ff3f00;
-    --gris: #1c2826;
-    --fuente_principal: ;
-}
-.rubik-wet-paint-regular {
-    font-family: "Rubik Wet Paint", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
+
+@import 'variables.scss';
   
 
 body{
@@ -18,7 +7,7 @@ body{
 }
 
 .logo{
-background-image: url(./images/alien.png);
+background-image: url($logo-background);
 width: 10%;
 height: 100%;
 margin: 0%;
@@ -29,9 +18,9 @@ background-repeat: no-repeat
 
 .barra-navegacion {
     position: absolute;
-    font-family: "Rubik Wet Paint", system-ui;
-    font-weight: 400;
-    font-style: normal;
+    font-family: $font-family-primary;
+    font-weight: $font-weight-regular;
+    font-style: $font-style-regular;
     margin: top 0%;
     font-size: 1.5rem;
     padding: 0.5rem;
@@ -39,16 +28,16 @@ background-repeat: no-repeat
     display: flex; 
     justify-content: space-around; 
     align-items: center;
-    background-color: var(--primario);
+    background-color: $primario;
     width: 100%;
     height: 70px;
     
 }
 .enlace{
     
-    background-color: var(--negro);
+    background-color: $negro;
     border-radius: 25%;
-    color: var(--primario);
+    color: $primario;
     text-decoration: none;
     padding: 0.5rem 0.5rem;
     max-width: 20%;
@@ -64,12 +53,12 @@ background-repeat: no-repeat
 }
 
 .enlace:hover{
-    color: var(--rojo);
-    background-color: var(--gris);
+    color: $rojo;
+    background-color: $gris;
     width: 130px;
     height: 40px;
     text-align: center;
-    box-shadow:0px 10px 10px #191919;
+    box-shadow:$box-shadow-enlace-hover;
 }
 
 .contenido{
@@ -79,7 +68,7 @@ background-repeat: no-repeat
     background-position:center ;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(./images/tiranidosBN.jpg);
+    background-image: url(../images/tiranidosBN.jpg);
 }
 
 .sidebar{
@@ -92,12 +81,12 @@ background-repeat: no-repeat
 
 
 h2, h3, h4{
-    color: var(--primario);
+    color: $primario;
     -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: var(--negro);
-    font-family: "Rubik Wet Paint", system-ui;
-    font-weight: 400;
-    font-style: normal;
+    -webkit-text-stroke-color: $negro;
+    font-family: $font-family-primary;
+    font-weight: $font-weight-regular;
+    font-style: $font-style-regular;
 }
 
 
@@ -121,11 +110,11 @@ footer{
     width: 100%;
     height: 50px;
     text-align: center;
-    color: var(--primario);
+    color: $primario;
     display: block;
-    background-color: var(--negro);
+    background-color: $negro;
 font-size: 2rem;
-font-family: "Rubik Wet Paint", system-ui;
-font-weight: 400;
-font-style: normal;
+font-family: $font-family-primary;
+font-weight: $font-weight-regular;
+font-style: $font-style-regular;
 }

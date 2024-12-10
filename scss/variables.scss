@@ -1,0 +1,38 @@
+/*
+En este archivo voy a declarar todas las variables.
+*/
+
+
+//Colores
+
+$negro: #191919;
+$primario: #FDE74C;
+$secundario: #ff7f11;
+$rojo: #ff3f00;
+$gris: #1c2826;
+
+
+//Tipografía
+
+
+$font-family-primary: "Rubik Wet Paint", system-ui;
+$font-weight-regular: 400;
+$font-style-regular: normal;
+
+
+//Dimensiones
+
+$logo-width: 10%; 
+$barra-altura: 70px; 
+$enlace-borde-radius: 25%; 
+$enlace-padding: 0.5rem; 
+$enlace-hover-width: 130px; 
+$enlace-hover-height: 40px; 
+$sidebar-padding: 7.5rem; 
+
+// Sombra
+$box-shadow-enlace-hover: 0px 10px 10px #191919;
+
+// Fondo
+$logo-background: "../images/alien.png";
+$contenido-background: "../images/tiranidosBN.jpg";
