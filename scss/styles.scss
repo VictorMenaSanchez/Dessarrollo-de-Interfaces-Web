@@ -1,5 +1,5 @@
-
-@import 'variables.scss';
+@import './mq.scss';
+@import './variables.scss';
   
 
 body{
@@ -17,11 +17,34 @@ background-repeat: no-repeat
 }
 
 .barra-navegacion {
+
+    //Este display grid es para la mq
+    
+
+    @include tablet{
+        //Esto se aplicará a pantallas con un tamaño menor a 768px
+        background-color: blue;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+
+        .logo{
+            grid-column: 1 / -1;
+            justify-self: center;
+        }
+
+        .enlace{
+            justify-self: center
+        }
+        
+    }
+
     position: absolute;
     font-family: $font-family-primary;
     font-weight: $font-weight-regular;
     font-style: $font-style-regular;
-    margin: top 0%;
+    margin-top:  0%;
     font-size: 1.5rem;
     padding: 0.5rem;
     position: fixed;
@@ -42,14 +65,18 @@ background-repeat: no-repeat
     padding: 0.5rem 0.5rem;
     max-width: 20%;
 }
-
+/*
+He decidido comentar estos dos elementos que desplazaban
+ los botones exteriores del menú un poco hacia arriba, 
+ porque considero que va a quedar mejor.
+*/
 .logo + a{
     
-    margin-bottom: 1.5rem;
+    //margin-bottom: 1.5rem;
 }
 
 .enlace:last-of-type{
-    margin-bottom: 1.5rem;
+    //margin-bottom: 1.5rem;
 }
 
 .enlace:hover{
