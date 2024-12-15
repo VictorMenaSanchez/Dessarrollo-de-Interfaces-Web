@@ -12,6 +12,37 @@ $rojo: #ff3f00;
 $gris: #1c2826;
 
 
+$estilo2: 'naranja';
+
+@function aplicarEstilo($estilo2){
+    @if $estilo2 == 'naranja'{
+        @return $secundario;
+    } @else {
+        @return $primario;
+    }
+}
+
+
+$estilo3: 'rojo';
+
+@function aplicarEstilo3($estilo3){
+    @if $estilo3 == 'rojo'{
+        @return $rojo;
+    } @else {
+        @return $primario;
+    }
+}
+
+$estilo4:'amarillo';
+
+@function aplicarEstilo4($estilo4){
+    @if $estilo4 == 'amarillo'{
+        @return $primario;
+    } @else {
+        @return $secundario;
+    }
+}
+
 //Tipografía
 
 
