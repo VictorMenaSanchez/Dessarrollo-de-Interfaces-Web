@@ -195,6 +195,9 @@ He decidido comentar estos dos elementos que desplazaban
   max-width: 60rem;
   margin: 0 auto;
   overflow: hidden;
+  /*
+  Este bucle for no tengo muy claro cómo funciona exactamente.
+  */
 }
 @media (max-width: 768px) {
   .galeria {
@@ -209,6 +212,46 @@ He decidido comentar estos dos elementos que desplazaban
     width: 100%;
     max-width: 32rem;
   }
+}
+.galeria .imagen-1 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.galeria .imagen-2 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.galeria .imagen-3 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.galeria .imagen-4 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.galeria .imagen-5 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.galeria .imagen-6 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.galeria .imagen-7 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.galeria .imagen-8 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .imagenes {
